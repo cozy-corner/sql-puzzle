@@ -1,0 +1,17 @@
+CREATE SCHEMA Q3;
+SET search_path to Q3;
+
+CREATE TABLE Procs(
+ proc_id INTEGER,
+ anest_name VARCHAR(64),
+ start_time TIMESTAMP,
+ end_time   TIMESTAMP );
+
+INSERT INTO Procs VALUES( 10, 'Baker', '01-07-01 08:00', '01-07-01 11:00');
+INSERT INTO Procs VALUES( 20, 'Baker', '01-07-01 09:00', '01-07-01 13:00');
+INSERT INTO Procs VALUES( 30, 'Dow'  , '01-07-01 09:00', '01-07-01 15:30'); 
+INSERT INTO Procs VALUES( 40, 'Dow'  , '01-07-01 08:00', '01-07-01 13:30'); 
+INSERT INTO Procs VALUES( 50, 'Dow'  , '01-07-01 10:00', '01-07-01 11:30'); 
+INSERT INTO Procs VALUES( 60, 'Dow'  , '01-07-01 12:30', '01-07-01 13:30'); 
+INSERT INTO Procs VALUES( 70, 'Dow'  , '01-07-01 13:30', '01-07-01 14:30'); 
+INSERT INTO Procs VALUES( 80, 'Dow'  , '01-07-01 18:00', '01-07-01 19:00'); 
